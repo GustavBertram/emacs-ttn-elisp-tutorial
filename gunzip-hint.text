@@ -1,0 +1,25 @@
+An interested reader writes:
+
+   Hi folks, I am new to unix and looking forward to learning about
+   emacs. The thing that is standing in my way is that I don't know how
+   to unpack a tarball. When I copy your zipped lessons onto my computer
+   (running Solaris) and type unpack *gz, it complains that it cannot
+   find elisp-tutorial.tar.gz.z -- natually it cannot. What am I doing
+   wrong?
+
+see if you can find "gunzip".
+
+then type:
+
+  $ gunzip -c elisp-tutorial.tar.gz | tar xvf -
+
+(note the space between the "f" and the "-".  in this case "-" means "standard
+input".)  if you have GNU tar, it typically includes gunzip support builtin, so
+you can simply do:
+
+  $ tar xvzf elisp-tutorial.tar.gz
+
+(note the "z" option.)  i'll include these instructions on the webpage in
+case others have a similar question.  thanks for pointing out this ambiguity!
+
+thi

@@ -1,0 +1,23 @@
+NEWS for ttn's Emacs Lisp tutorial
+
+- 2.05 | 2012-11-05
+  - mention Emacs 22 enables font-locking by default
+  - yo.el sync'd w/ ttn-pers-elisp 1.59
+
+- 2.04 | 2009-06-14
+  - files re-encoded in UTF-8
+  - say "Emacs Lisp" throughout
+  - improved grammar, spelling, style
+
+- 2.03 | 2008-03-28
+  - license now GPLv3+
+  - metadata (index.html contents) updated
+
+- 2.02 | 2005-10-02
+  - fix typo
+  - update lesson index in index.html
+
+- 2.01 | 2005-09-20
+  - first release with version number
+  - new lesson: 04
+  - mini-project changed to SGF editing

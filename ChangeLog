@@ -1,0 +1,341 @@
+2012-11-05  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	Release: 2.05
+
+	* GNUmakefile (version): Bump to "2.05" for release.
+
+2012-11-05  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	[maint] Rename GNUmakefile target for uniformity.
+
+	* GNUmakefile (dist): Rename from ‘tarball’.
+
+2012-11-05  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	[maint] Don't specify anything for {extra,minus}dist.
+
+	* GNUmakefile (extradist, minusdist): Set vars to have no value.
+
+2012-11-05  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	Sync yo.el with that in ttn-pers-elisp 1.59.
+
+	* yo.el: New file.
+	* autogen.sh: Delete file.
+
+2012-11-05  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	Mention Emacs 22 in font-locking blurb.
+
+	* index.html (How to begin): ...here.
+
+2009-06-14  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	Release: 2.04
+
+	* GNUmakefile (version): Bump to "2.04" for release.
+
+2009-06-12  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	Throughout, say "Emacs Lisp" instead of "elisp".
+
+	* GNUmakefile: Update.
+	* index.html: Likewise.
+	* lesson01.el: Likewise.
+	* lesson02.el: Likewise.
+	* lesson03.el: Likewise.
+	* lesson04.el: Likewise.
+	* sanity-check.el: Likewise.
+	* tutorial-magic.el: Likewise.
+
+2009-06-12  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	Convert index.html to UTF-8; label it explicitly.
+
+	* index.html: Add META element to specify
+	Content-Type and charset.  Re-encode as UTF-8.
+
+2008-03-28  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	Release: 2.03
+
+	* GNUmakefile (version): Bump to "2.03" for release.
+
+2008-03-28  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	No longer support "make publish".
+
+	* GNUmakefile (homepage): Delete var.
+	(publish): Delete target.
+
+2008-03-18  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	* GNUmakefile: Rename from Makefile.
+
+2008-03-18  Thien-Thi Nguyen  <ttn@gnuvola.org>
+
+	Convert RCS-isms to Git-isms; glug to gnuvola.
+	For each file, remove version control tags.
+
+	* Makefile (minusdist): New var.
+	(tarball): Check for .git subdir; use "git ls-files".
+	(homepage): Update.
+	* lesson02.el: Update gnugo.el url.
+
+2006-01-13  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* lesson01.el: Say "M-x lisp-interaction-mode RET" (with "RET").
+
+2005-10-03  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Remove double-quotes around VERSION.
+	Remove "planned" tag from lesson04.el.
+
+2005-10-02  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* Makefile (version): Bump to "2.02" for release.
+
+2005-10-02  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Link to NEWS instead of ChangeLog.
+	Link to GNU's gpl.html instead of COPYING.
+
+2005-10-02  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* Makefile (tag): Rename var from `dtag'.  Update references.
+	(tag, all): New targets.
+
+2005-09-23  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Update lesson index.
+
+2005-09-20  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* Makefile (version): Bump to "2.01" for release.
+
+2005-09-20  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Remove email addresses.
+
+2005-09-20  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* Makefile (version, dd, dtag): New vars.
+	(tarball, publish): Rewrite to use new vars.
+
+	* index.html: Update VERSION-substitution sites.
+
+2005-09-20  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* lesson04.el: New file.
+
+2005-09-18  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* tutorial-magic.el (fancy-message): Explicitly return t.
+
+2005-09-09  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Add "<!DOCTYPE ...>" at top of file.
+
+2005-08-26  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Remove "Commands" and "Packaging" from lesson04.el.
+
+2005-01-26  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* lesson02.el, lesson03.el:
+	Change project focus from povray-editing to SGF-editing.
+
+2004-11-22  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* sanity-check.el: Add Commentary/Code comments; nfc.
+
+2004-11-22  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Acknowledge help from tboult.
+
+2004-08-16  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Link to file COPYING.
+	Use absolute links for glug.org pages outside this directory.
+	Use "exceptionally".
+	Other minor rewording.
+
+2004-08-16  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Update link to ChangeLog.
+
+2004-08-16  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Move <p> tags before paragraphs.
+	Markup M-x commands w/ <tt> and <em>.
+	Mention that font-locking is ok.
+	Add adverb describing desired interaction w/ Emacs.
+
+2004-08-16  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Acknowledge feedback from RMS.
+
+2004-08-16  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* Makefile: Update copyright.
+	No longer use Id, RCSfile or Revision RCS tags.
+	Instead, use State and Name.
+	* tutorial-magic.el: Likewise.
+
+	* index.html: No longer use Id, RCSfile or Revision RCS tags.
+	Instead, use State and Name.
+	* sanity-check.el: Likewise.
+
+	* lesson01.el: Update copyright.
+	No longer use Id RCS tag.
+	Instead, use State and Name.
+	* lesson03.el: Likewise.
+
+	* lesson02.el: No longer use Id RCS tag.
+	Instead, use State and Name.
+
+2004-08-16  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* lesson02.el: Update copyright.
+	Use `chat-with-neighbor' instead of `get-gas'.
+	* sanity-check.el: Likewise.
+
+2004-07-03  Thien-Thi Nguyen  <ttn@surf.glug.org>
+
+	* index.html: Update copyright.
+	No longer link to Robert Chassell's Emacs Lisp intro.
+	Instead, replace it w/ a Google search for same.
+	Acknowledge help from Siddharth Patil.
+
+2002-10-28  Thien-Thi Nguyen  <ttn@giblet.glug.org>
+
+	* Makefile (et, homepage): New vars.
+	(tarball): Use $(et).
+	Substitute version info in index.html.
+	(publish): New target.
+
+	* index.html: Add comments to be substituted with version on
+	"make tarball".
+
+	* lesson02.el: Small refill.
+
+	* lesson03.el: Use "variable meaning" and "meaning as variable"
+	instead of "variable slot".  Thanks to RMS for new intro text.
+
+2002-08-05  Thien-Thi Nguyen  <ttn@giblet.glug.org>
+
+	* gunzip-hint.text: New file.
+
+	* index.html: Update copyright.
+	Link to gunzip-hint.text.
+	Acknowledge input from Jeremy.
+
+2000-01-27  thi  <ttn@mingle.glug.org>
+
+	* index.html: Update copyright.
+
+	Acknowledge input from Alix LHERITIER.
+
+1999-12-18  thi  <ttn@mingle.glug.org>
+
+	* index.html: Acknowledge Marco Antoniotti.
+
+1999-07-17  thi  <ttn@mingle.glug.org>
+
+	* sanity-check.el: Handle `lesson03-global-vars-ok' pov.
+
+	* index.html: Remove "planned" tag from lesson03.
+
+	* index.html: Link to ChangeLog and feedback page.
+
+	Update links to reflect relocation to glug.org.
+
+	Emphasize tarball approach as the only way henceforth.
+
+	Add detail to lesson table of contents.
+
+	* lesson03.el: New file.
+
+1999-07-14  thi  <ttn@mingle.glug.org>
+
+	* Makefile: Make tarfile in current directory.
+
+	* lesson02.el:
+	Do not foreshadow `if' and `while' coverage for lesson03.
+
+1999-06-13  thi  <ttn@mingle.glug.org>
+
+	* lesson02.el (edit-3d-objects):
+	Rework to be completely functional rather
+	than partially sequential.
+
+1999-06-12  thi  <ttn@mingle.glug.org>
+
+	* lesson02.el: Use `tutorial-bonus'.
+
+	* tutorial-magic.el (tutorial-bonus): New func.
+
+	* lesson01.el: Expand `C-j' introductory comments and explanation.
+	Describe both methods of using `describe-key'.
+	Explicitly state expected result of `(% 3.0 42.0)', and explain.
+	Add degenerate-arg sexps exercise.
+	Add closing-paren exercises.
+	Point to correct origin point in cursor-movement exercise.
+	Fix typos.
+
+	* index.html: Fix URL typo.
+
+	* index.html: Acknowledge Daniel Moore.
+
+1999-06-05  thi  <ttn@mingle.glug.org>
+
+	* index.html: Emphasize "recommended" in two places.
+
+1999-05-24  thi  <ttn@mingle.glug.org>
+
+	* index.html: Add page toc and supporting links.
+	Add link to glug software page.
+	Add acknowledgements section.
+
+1999-05-23  thi  <ttn@mingle.glug.org>
+
+	* lesson01.el: Fix typo.
+
+1999-05-02  thi  <ttn@mingle.glug.org>
+
+	* index.html: Add link to ChangeLog.
+
+	* index.html: Use absolute URL to tarball on cran.mit.edu.
+
+	Add links to lessons.
+
+	* lesson02.el: New file.
+
+	* lesson01.el: Rename "Wrap Up" section to "Lesson 01 Wrap Up".
+
+	* tutorial-magic.el (fancy-message): Add docstring.
+	(dawdle): New func.
+
+	* index.html: Do not mention a specific project.
+	Add feedback link.
+
+	* Makefile, sanity-check.el, tutorial-magic.el, index.html: New files.
+
+1999-03-25  thi  <ttn@mingle.glug.org>
+
+	* lesson01.el:
+	Make explanatory text for `(+ "elisp rules" " forever")' more clear.
+
+1999-03-15  thi  <ttn@mingle.glug.org>
+
+	* lesson01.el: Simplify wage expression.
+
+	* lesson01.el: Coalesce command sequences.
+
+	* lesson01.el: New file.
+
+
+Copyright (C) 2008, 2009, 2010, 2012 Thien-Thi Nguyen
+
+Copying and distribution of this file, with or without modification,
+are permitted provided the copyright notice and this notice are preserved.

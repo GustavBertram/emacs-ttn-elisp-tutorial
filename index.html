@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<!--
+   index.html
+
+   Copyright (C) 1999, 2000, 2001, 2002, 2004,
+      2005, 2008, 2009, 2012 Thien-Thi Nguyen
+
+   This file is part of ttn's Emacs Lisp tutorial, provided under GNU GPL
+   with ABSOLUTELY NO WARRANTY.  See the file COPYING for details.
+  -->
+<HEAD>
+<TITLE>ttn's Emacs Lisp tutorial</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</HEAD>
+
+<BODY>
+
+<p>
+Welcome to ttn's Emacs Lisp tutorial (version 2.05)!
+
+<p>
+<ul>
+<li><a name="ix-ov" href="#ov">Overview</a>
+<li><a name="ix-begin" href="#begin">How to begin</a>
+<li><a name="ix-lessons" href="#lessons">Lessons</a>
+<li><a name="ix-ack" href="#ack">Acknowledgements</a>
+<li><a href="NEWS">NEWS</a>
+</ul>
+
+<hr>
+
+<a name="ov" href="#ix-ov"><em>
+Overview
+</em></a>
+
+<p>
+This directory contains a simple Emacs Lisp tutorial, released under
+<a href="http://www.gnu.org">GNU</a>
+<a href="http://www.gnu.org/licenses/gpl.html">GPL</a>,
+presented in several
+lessons.  After going through the lessons, you should be familiar enough
+with Emacs Lisp to read and write programs of moderate complexity,
+and to continue your studies independently.
+
+<p>
+Before you get into this particular tutorial, check out the most excellent
+<a href="http://www.google.com/search?q=emacs+lisp+intro+chassell">
+Emacs-Lisp Intro</a> by Robert J. Chassell.  Recommended.
+
+<p>
+See the author's
+<a href="http://www.gnuvola.org/software/">free software page</a>
+for other (potentially :-) educational works.
+
+<hr>
+
+<a name="begin" href="#ix-begin"><em>
+How to begin
+</em></a>
+
+<p>
+To follow along properly, you will need an Emacs running under a sane
+operating system, such as GNU/Linux.  If you are stuck under anything by
+Microsoft, the tutorial is still workable, but will probably be less
+fun.  You must start Emacs by typing at a command prompt: "emacs -q" and
+pressing Return (or Enter as you may see on your keyboard).  This is
+<em>recommended</em> over starting Emacs from a pull-down menu because
+the "-q" option means "quick start"; the normal initializations that
+take a long time are bypassed.  This also helps us stay on the same
+page, for some of these initializations may not be compatible with this
+tutorial.
+
+<p>
+One exceptionally useful feature that "emacs -q" does not normally provide is
+font-locking (also known as syntax highlighting).  It is ok to enable this
+feature (with command `<em><tt>M-x global-font-lock-mode</tt></em>'); the
+tutorial does not make use of font-locking but by the same token is not harmed
+by it.
+[Update 2012-11-05: As of Emacs 22, font-locking is enabled by default,
+so there is no need to manually enable it.]
+
+<p>
+Although the page you are reading is html, the body of the tutorial is
+presented as heavily commented Emacs Lisp code.  It is <em>extremely</em>
+important that you save each lesson as a writeable file that is opened
+from within Emacs by `<em><tt>M-x find-file</tt></em>'.  Simply reading
+the file may offer you some insight, but the whole point of the tutorial
+is to viscerally interact with the Emacs Lisp programming environment (that
+is, Emacs).  Thus, the <em>only</em> way to proceed is to grab the gzipped
+<a href="elisp-tutorial-2.05.tar.gz">tarball</a> (version 2.05)
+and <A HREF="gunzip-hint.text">unpack<A> it locally,
+so that you can modify the files for maximal empirical benefit.
+
+<p>
+Start with lesson01.el.  There will be times when you are asked to do
+certain things in Emacs; these are identifiable by a prompt consisting
+of two greater-than signs.  The instructions follow.  Try to follow the
+instructions in the order given; the tutorial usually depends on this.
+
+<hr>
+
+<a name="lessons" href="#ix-lessons"><em>
+Lessons
+</em></a>
+
+<p>
+<ul>
+<li>lesson01.el
+	<ul>
+	<li>Audience
+	<li>Methods
+	<li>Evaluation
+	<li>Wrap Up
+	</ul>
+<li>lesson02.el
+	<ul>
+	<li>A Project?
+	<li>Sanity Check
+	<li>Doing Chores
+	<li>Building Functions with DEFUN
+		<ul>
+		<li>Function Names
+		<li>Function Arguments
+		<li>Function Documentation
+		<li>Function Body
+		</ul>
+	<li>Wrap Up
+	</ul>
+<li>lesson03.el
+	<ul>
+	<li>Variables and SETQ
+		<ul>
+		<li>Introducing SETQ
+		<li>Variable Names
+		<li>Variable Documentation
+		</ul>
+	<li>Localizing Variables with LET
+		<ul>
+		<li>Life, the Universe and Everything
+		<li>Serial Let
+		<li>Shadowing
+		</ul>
+	<li>Wrap Up
+	</ul>
+<li>lesson04.el
+	<ul>
+	<li>Choosing Paths with IF
+	<li>Iteration with WHILE
+        <li>Wrap Up
+	</ul>
+<li><em>[more lessons as time permits]</em>
+</ul>
+
+<hr>
+
+<a name="ack" href="#ix-ack"><em>
+Acknowledgements
+</em></a>
+
+<p>
+The following people have provided valuable comments and ideas.  The
+tutorial is richer through their participation.
+
+<p>
+Richard Stallman,
+Jeff Tuckey,
+Daniel Moore,
+Sridhar Gopal,
+Odile Bénassy,
+Marco Antoniotti,
+Alix LHERITIER,
+Jeremy,
+Siddharth Patil,
+tboult.
+
+<p>
+Please feel free to join these folks by sending feedback on tutorial
+content or style, or anything else related to learning Emacs Lisp.
+
+<hr>
+Copyright (C) 1999-2002,2004-2005,2008-2009 Thien-Thi Nguyen
+
+</BODY>
+</HTML>
+<!-- index.html ends here -->
